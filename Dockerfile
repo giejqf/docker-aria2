@@ -28,7 +28,7 @@ RUN apt-get update && \
     apt-get autoremove -y && \
     rm -rf /var/lib/{apt,dpkg,cache,log} && \
     mkdir -p /app && \
-    mkdir -p /app/download && \
+    mkdir -p /app/download
     
 ADD aria2.conf /app/aria2.conf
 WORKDIR /app
