@@ -1,4 +1,4 @@
-FROM alpine:2.7
+FROM alpine:latest
 
 RUN apk add -U aria2 && \
   rm -rf /var/cache/apk/* && \
