@@ -3,7 +3,7 @@ FROM alpine:2.7
 RUN apk add -U aria2 && \
   rm -rf /var/cache/apk/* && \
   mkdir -p /app && \
-  mkdir -p /app/download && \
+  mkdir -p /app/download
     
 ADD aria2.conf /app/aria2.conf
 
